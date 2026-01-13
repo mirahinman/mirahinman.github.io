@@ -1,0 +1,25 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+# TEAM
+
+    Mira Hinman -- Owner & Creator
+    Site: https://mira-hinman.org
+    Location: USA
+
+# THANKS
+
+    Thanks to all the open-source contributors who make the web beautiful.
+
+# TECHNOLOGY COLOPHON
+
+    HTML5, CSS3, JavaScript
+    Fonts: Inter, Space Grotesk (Google Fonts)
+    Hosted on: GitHub Pages
+    
+# SITE
+
+    Last update: 2026-01-13
+    Standards: HTML5, CSS3
+    Components: Vanilla JavaScript
+    Software: Hand-coded with care

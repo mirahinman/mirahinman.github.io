@@ -1,0 +1,8 @@
+# robots.txt for mira-hinman.org
+# This file tells search engines which pages to crawl
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://mira-hinman.org/sitemap.xml
