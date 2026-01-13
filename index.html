@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Personal website of Mira Hinman - showcasing work, career, and ideas">
+  <title>Mira Hinman - Personal Website</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-container">
+      <div class="nav-logo" onclick="scrollToSection('hero')">MH</div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-menu" id="navMenu">
+        <li><a href="#hero" class="nav-link active" data-section="hero">Home</a></li>
+        <li><a href="#about" class="nav-link" data-section="about">About</a></li>
+        <li><a href="#work" class="nav-link" data-section="work">Work & Career</a></li>
+        <li><a href="#writing" class="nav-link" data-section="writing">Writing & Ideas</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container">
+      <div class="hero-content">
+        <h1>Mira Hinman</h1>
+        <p class="hero-subtitle">
+          Scientist. Reader. Cautious optimist.<br>
+          I work in the Pharma industry at the intersection of science and
+          technology, working with teams to integrate AI and machine learning into scientific workflows.<br>
+          I also research
+          and write about how reproductive choice and modern medicine are recasting our present and our future.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about">
+    <div class="container">
+
+      <div class="content">
+        <!-- Main Bio & Image -->
+        <div class="about-layout mb-xl fade-in-up">
+          <img src="IMG_8944.jpeg" alt="Mira Hinman" class="about-profile-img">
+
+          <div class="card about-text-card">
+            <h3 class="card-title">My Journey</h3>
+            <p class="card-description">
+              I trained as an organic chemist and got my Ph.D. in the total synthesis of alkaloid natural products. The
+              patience and focus required of that work contributed to my interest and skill in solving long-horizon
+              problems.
+            </p>
+            <p class="card-description">
+              I enjoy identifying a long-term objective and then working from the bottom-up to construct a plan built of
+              tractable components. This approach supports alignment across teams and short-term wins along the path to
+              an end-goal.
+            </p>
+            <p class="card-description">
+              I’ve been away from the bench for a long time, but the structure of my thoughts, focused on data and
+              analysis toward a larger objective stays with me in everything that I do.
+            </p>
+          </div>
+        </div>
+
+        <div class="card-grid">
+          <div class="card fade-in-up stagger-2">
+            <div class="card-icon">💡</div>
+            <h3 class="card-title">Interests</h3>
+            <p class="card-description">
+              [What are you passionate about? What topics fascinate you? What do you enjoy learning or doing in your
+              free time?]
+            </p>
+          </div>
+
+          <div class="card fade-in-up stagger-3">
+            <div class="card-icon">🚀</div>
+            <h3 class="card-title">Vision</h3>
+            <p class="card-description">
+              [What are you working towards? What impact do you want to make? What drives you forward?]
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work & Career Section -->
+  <section id="work">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <p class="section-label">Professional Journey</p>
+        <h2 class="section-title">Work & Career</h2>
+        <p class="section-description">
+          [A brief overview of your professional experience and achievements]
+        </p>
+      </div>
+
+      <div class="content">
+        <!-- Experience Cards -->
+        <div class="card-grid">
+          <div class="card fade-in-up stagger-1">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">[Job Title/Role 1]</h3>
+            <p class="card-description">
+              [Company Name] - [Brief description of your role, key responsibilities, and major achievements. What
+              impact did you make?]
+            </p>
+            <div class="card-meta">
+              <span>📅 [Time Period, e.g., 2022 - Present]</span>
+            </div>
+          </div>
+
+          <div class="card fade-in-up stagger-2">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">[Job Title/Role 2]</h3>
+            <p class="card-description">
+              [Company Name] - [Brief description of your role, key responsibilities, and major achievements. What did
+              you learn?]
+            </p>
+            <div class="card-meta">
+              <span>📅 [Time Period, e.g., 2020 - 2022]</span>
+            </div>
+          </div>
+
+          <div class="card fade-in-up stagger-3">
+            <div class="card-icon">💼</div>
+            <h3 class="card-title">[Job Title/Role 3]</h3>
+            <p class="card-description">
+              [Company Name] - [Brief description of your role, key responsibilities, and major achievements.]
+            </p>
+            <div class="card-meta">
+              <span>📅 [Time Period, e.g., 2018 - 2020]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Featured Projects -->
+        <div class="mt-xl">
+          <h3 class="text-gradient mb-lg text-center">Featured Projects</h3>
+
+          <div class="card fade-in-up">
+            <h3 class="card-title">[Project Name 1]</h3>
+            <p class="card-description mb-md">
+              [Describe a significant project you've worked on. What was the challenge? What did you build? What was the
+              outcome?]
+            </p>
+            <div class="card-meta">
+              <span>🏷️ [Technology/Category]</span>
+              <span>📅 [Year]</span>
+            </div>
+          </div>
+
+          <div class="card fade-in-up mt-lg">
+            <h3 class="card-title">[Project Name 2]</h3>
+            <p class="card-description mb-md">
+              [Another significant project. Focus on what makes it interesting or impactful. What skills did you use or
+              develop?]
+            </p>
+            <div class="card-meta">
+              <span>🏷️ [Technology/Category]</span>
+              <span>📅 [Year]</span>
+            </div>
+          </div>
+
+          <div class="card fade-in-up mt-lg">
+            <h3 class="card-title">[Project Name 3]</h3>
+            <p class="card-description mb-md">
+              [One more project that showcases your work. What are you proud of? What did you learn?]
+            </p>
+            <div class="card-meta">
+              <span>🏷️ [Technology/Category]</span>
+              <span>📅 [Year]</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Skills & Expertise -->
+        <div class="card mt-xl fade-in-up">
+          <h3 class="card-title">Skills & Expertise</h3>
+          <p class="card-description mb-lg">
+            [List your key skills, technologies, or areas of expertise. You can organize these by category or
+            importance.]
+          </p>
+          <div class="card-grid">
+            <div>
+              <h4 class="mb-md text-gradient">[Category 1, e.g., Technical]</h4>
+              <p class="card-description">[Skill 1], [Skill 2], [Skill 3], [Skill 4]</p>
+            </div>
+            <div>
+              <h4 class="mb-md text-gradient">[Category 2, e.g., Tools]</h4>
+              <p class="card-description">[Tool 1], [Tool 2], [Tool 3], [Tool 4]</p>
+            </div>
+            <div>
+              <h4 class="mb-md text-gradient">[Category 3, e.g., Soft Skills]</h4>
+              <p class="card-description">[Skill 1], [Skill 2], [Skill 3], [Skill 4]</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Writing & Ideas Section -->
+  <section id="writing">
+    <div class="container">
+      <div class="section-header fade-in-up">
+        <p class="section-label">Thoughts & Musings</p>
+        <h2 class="section-title">Writing & Ideas</h2>
+        <p class="section-description">
+          [A brief description of what you write about - your areas of interest, themes, or topics you explore]
+        </p>
+      </div>
+
+      <div class="content">
+        <!-- Featured Writing -->
+        <div class="writing-card fade-in-up stagger-1">
+          <div class="writing-card-header">
+            <h3 class="writing-card-title">[Article/Post Title 1]</h3>
+            <span class="writing-card-date">[Date, e.g., Jan 2026]</span>
+          </div>
+          <p class="writing-card-excerpt">
+            [A compelling excerpt or summary of your article. What's the main idea? Why should someone read it? This
+            should hook the reader and give them a taste of your writing.]
+          </p>
+          <div class="writing-card-tags">
+            <span class="tag">[Tag 1]</span>
+            <span class="tag">[Tag 2]</span>
+            <span class="tag">[Tag 3]</span>
+          </div>
+        </div>
+
+        <div class="writing-card fade-in-up stagger-2">
+          <div class="writing-card-header">
+            <h3 class="writing-card-title">[Article/Post Title 2]</h3>
+            <span class="writing-card-date">[Date, e.g., Dec 2025]</span>
+          </div>
+          <p class="writing-card-excerpt">
+            [Another engaging excerpt. Each piece of writing should showcase different aspects of your thinking or areas
+            of interest.]
+          </p>
+          <div class="writing-card-tags">
+            <span class="tag">[Tag 1]</span>
+            <span class="tag">[Tag 2]</span>
+          </div>
+        </div>
+
+        <div class="writing-card fade-in-up stagger-3">
+          <div class="writing-card-header">
+            <h3 class="writing-card-title">[Article/Post Title 3]</h3>
+            <span class="writing-card-date">[Date, e.g., Nov 2025]</span>
+          </div>
+          <p class="writing-card-excerpt">
+            [A third piece that demonstrates the breadth or depth of your writing. What unique perspective or insight do
+            you offer?]
+          </p>
+          <div class="writing-card-tags">
+            <span class="tag">[Tag 1]</span>
+            <span class="tag">[Tag 2]</span>
+            <span class="tag">[Tag 3]</span>
+          </div>
+        </div>
+
+        <div class="writing-card fade-in-up stagger-4">
+          <div class="writing-card-header">
+            <h3 class="writing-card-title">[Article/Post Title 4]</h3>
+            <span class="writing-card-date">[Date, e.g., Oct 2025]</span>
+          </div>
+          <p class="writing-card-excerpt">
+            [Continue sharing your written work. You can add as many of these as you like to showcase your portfolio of
+            ideas.]
+          </p>
+          <div class="writing-card-tags">
+            <span class="tag">[Tag 1]</span>
+            <span class="tag">[Tag 2]</span>
+          </div>
+        </div>
+
+        <!-- Topics & Themes -->
+        <div class="card mt-xl fade-in-up">
+          <h3 class="card-title">Topics I Write About</h3>
+          <p class="card-description mb-lg">
+            [Describe the main themes, topics, or areas you explore in your writing. What questions drive your thinking?
+            What ideas fascinate you?]
+          </p>
+          <div class="card-grid">
+            <div class="card">
+              <h4 class="card-title">[Topic/Theme 1]</h4>
+              <p class="card-description">
+                [Brief description of this area of interest and why it matters to you]
+              </p>
+            </div>
+            <div class="card">
+              <h4 class="card-title">[Topic/Theme 2]</h4>
+              <p class="card-description">
+                [Another area you write about and what draws you to it]
+              </p>
+            </div>
+            <div class="card">
+              <h4 class="card-title">[Topic/Theme 3]</h4>
+              <p class="card-description">
+                [A third topic that captures your attention]
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center mt-xl fade-in-up">
+          <h3 class="mb-md">Want to discuss ideas?</h3>
+          <p class="card-description mb-lg">
+            [Invite readers to connect with you. Where can they find more of your writing? How can they get in touch?]
+          </p>
+          <button class="btn btn-primary" onclick="window.location.href='mailto:your.email@example.com'">
+            Get In Touch
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
