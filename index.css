@@ -443,8 +443,8 @@ section {
 .section-description {
   font-size: var(--font-size-lg);
   color: var(--color-text-secondary);
-  max-width: 700px;
-  margin: 0 auto;
+  max-width: 800px;
+  margin: 0 auto var(--spacing-lg);
 }
 
 /* === CARDS === */
@@ -583,6 +583,33 @@ section {
   font-weight: 600;
 }
 
+/* --- Read More Toggle --- */
+.more-content {
+  display: none;
+}
+
+.read-more-btn {
+  background: none;
+  border: none;
+  color: var(--color-secondary);
+  font-family: var(--font-primary);
+  font-size: var(--font-size-sm);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  padding: var(--spacing-xs) 0;
+  cursor: pointer;
+  transition: color var(--transition-base);
+  margin-top: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+  display: inline-block;
+}
+
+.read-more-btn:hover {
+  color: var(--color-primary);
+  text-decoration: underline;
+}
+
 /* === ANIMATIONS === */
 @keyframes fadeInUp {
   from {
@@ -611,8 +638,8 @@ section {
 
 .about-profile-img {
   width: 100%;
-  max-width: 300px;
-  height: 400px;
+  max-width: 450px;
+  height: 550px;
   object-fit: cover;
   border-radius: var(--radius-lg);
   box-shadow: var(--shadow-lg);
@@ -734,8 +761,8 @@ section {
 
   .about-profile-img {
     margin-bottom: var(--spacing-lg);
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     /* Square for mobile looks better usually */
   }
 

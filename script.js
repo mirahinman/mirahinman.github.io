@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             nav.classList.remove('scrolled');
         }
-        
+
         // Update active nav link based on scroll position
         updateActiveLink();
     });
@@ -46,12 +46,12 @@ document.addEventListener('DOMContentLoaded', () => {
         if (section) {
             const navHeight = nav.offsetHeight;
             const targetPosition = section.offsetTop - navHeight;
-            
+
             window.scrollTo({
                 top: targetPosition,
                 behavior: 'smooth'
             });
-            
+
             // Update active state manually for immediate feedback
             navLinks.forEach(link => {
                 link.classList.remove('active');
@@ -79,7 +79,7 @@ document.addEventListener('DOMContentLoaded', () => {
         sections.forEach(section => {
             const sectionTop = section.offsetTop;
             const sectionHeight = section.clientHeight;
-            
+
             if (window.scrollY >= (sectionTop - navHeight)) {
                 currentString = section.getAttribute('id');
             }
@@ -116,3 +116,20 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 });
+
+// === READ MORE TOGGLE ===
+function toggleReadMore() {
+    const dots = document.getElementById("dots-1");
+    const moreText = document.getElementById("more-1");
+    const btnText = document.getElementById("readMoreBtn");
+
+    if (dots.style.display === "none") {
+        dots.style.display = "inline";
+        btnText.innerHTML = "Read more";
+        moreText.style.display = "none";
+    } else {
+        dots.style.display = "none";
+        btnText.innerHTML = "Read less";
+        moreText.style.display = "block";
+    }
+}

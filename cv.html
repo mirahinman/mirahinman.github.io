@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Mira Hinman</title>
+    <link rel="stylesheet" href="index.css">
+    <style>
+        .cv-container {
+            width: 100%;
+            height: 80vh;
+            border: 1px solid rgba(120, 144, 148, 0.2);
+            border-radius: var(--radius-md);
+            margin-bottom: var(--spacing-lg);
+            background: #fff;
+        }
+
+        .cv-actions {
+            display: flex;
+            justify-content: center;
+            gap: var(--spacing-md);
+            margin-bottom: var(--spacing-xl);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="nav" id="nav">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="window.location.href='index.html'">MH</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html#work" class="nav-link">Back to Work</a></li>
+                <li><a href="index.html#writing" class="nav-link">Writing</a></li>
+                <li><a href="index.html#about" class="nav-link">About</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container" style="padding-top: calc(var(--nav-height) + var(--spacing-xl));">
+        <div class="section-header fade-in-up">
+            <h2 class="section-title">Curriculum Vitae</h2>
+        </div>
+
+        <div class="content fade-in-up stagger-1" style="max-width: 1000px;">
+
+            <!-- CV Viewer -->
+            <!-- Note: .doc files often force download. A PDF is recommended for inline viewing. -->
+            <!-- CV Viewer -->
+            <iframe src="Mira Hinman CV_2026.pdf" class="cv-container" title="Mira Hinman CV">
+                <p>Your browser does not support embedded PDFs. <a href="Mira Hinman CV_2026.pdf">Download the CV</a>
+                    instead.</p>
+            </iframe>
+
+            <!-- Actions -->
+            <div class="cv-actions">
+                <a href="Mira Hinman CV_2026.pdf" download class="btn btn-primary">
+                    Download CV
+                </a>
+                <a href="index.html#work" class="btn btn-secondary">
+                    Back to Site
+                </a>
+            </div>
+        </div>
+
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
